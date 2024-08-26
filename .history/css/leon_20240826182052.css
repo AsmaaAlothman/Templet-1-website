@@ -1423,7 +1423,7 @@ img {
     width: 0;
     height: 50%;
     position: absolute;
-    background-color: #f3f5a049;
+    background-color: #ffee006b;
     z-index: -1;
     transition: var(--main-transition);
 }

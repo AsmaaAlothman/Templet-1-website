@@ -1423,7 +1423,7 @@ img {
     width: 0;
     height: 50%;
     position: absolute;
-    background-color: #f3f5a049;
+    background-color: #f6f6f6;
     z-index: -1;
     transition: var(--main-transition);
 }
@@ -1493,32 +1493,11 @@ img {
     border: 1px solid #eee;
 }
 
-.pricing .container .box ul li::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f00c";
-    margin-right: 10px;
-    font-weight: 900;
-    color: var(--main-color);
-}
+.pricing .container .box ul li::before {}
 
-.pricing .container .box a {
-    display: block;
-    width: fit-content;
-    border: 2px solid var(--main-color);
-    border-radius: 6px;
-    margin: 30px auto 40px;
-    padding: 15px 20px;
-    color: var(--main-color);
-    font-weight: bold;
-    transition: var(--main-transition);
-}
+.pricing .container .box a {}
 
-.pricing .container .box a:hover {
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-    color: white;
-    font-size: 20px;
-}
+.pricing .container .box a:hover {}
 
 
 /* Start Pricing */

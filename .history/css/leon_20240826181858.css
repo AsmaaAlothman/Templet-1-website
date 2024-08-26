@@ -1423,7 +1423,7 @@ img {
     width: 0;
     height: 50%;
     position: absolute;
-    background-color: #f3f5a049;
+    background-color: #f6f6f6;
     z-index: -1;
     transition: var(--main-transition);
 }
@@ -1515,9 +1515,6 @@ img {
 
 .pricing .container .box a:hover {
     background-color: var(--main-color);
-    border-color: var(--main-color);
-    color: white;
-    font-size: 20px;
 }
 
 
