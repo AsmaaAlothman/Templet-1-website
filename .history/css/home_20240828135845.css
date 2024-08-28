@@ -1,0 +1,43 @@
+/* Start global rules : */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #b657e2;
+    --main-color-alt: #ae7fec;
+    --icon-color-hover: #9997b9;
+    --hover-purble-color: rgba(184, 159, 243, 0.5);
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background-color: #f6f6f6;
+    --paragraph-color: #555;
+    --rate-color: #fff700;
+    --main-box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.048), 0 2px 4px 0 rgb(0 0 0/12%);
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    /* font-family: "Work Sans", sans-serif;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* End global rules  */
