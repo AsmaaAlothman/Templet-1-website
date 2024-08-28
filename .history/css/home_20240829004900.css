@@ -245,7 +245,7 @@ img {
 .header .main_nav>li>a.partner_with_us:hover {
     color: white;
     background-color: var(--main-color);
-    font-size: 21px;
+    font-size: 20px;
     font-weight: bold;
 }
 
