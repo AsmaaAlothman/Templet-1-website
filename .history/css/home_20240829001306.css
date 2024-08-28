@@ -718,8 +718,8 @@ img {
 }
 
 .footer .footer-links a:hover {
-    color: var(--main-color-alt);
-    font-weight: bolder;
+    color: white;
+    font-weight: bold;
     border: none;
     box-shadow: var(--main-box-shadow);
     transition: var(--main-transition);

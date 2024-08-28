@@ -564,8 +564,7 @@ img {
 }
 
 .about-us .container .box img:hover {
-    transform: rotate(360deg) scale(1);
-    transition-duration: 3s;
+    transform: rotate(2deg) scale(1);
 }
 
 .about-us .container h3 {
@@ -711,24 +710,19 @@ img {
     display: block;
     font-size: 17px;
     letter-spacing: 4px;
-    color: white;
-    border-bottom: 3px solid rgba(58, 79, 148, 0.918);
-    border-radius: 6px;
+    color: rgb(235, 239, 240);
+    border: 1px solid rgba(42, 42, 206, 0.918);
     padding: 10px;
 }
 
 .footer .footer-links a:hover {
-    color: var(--main-color-alt);
-    font-weight: bolder;
-    border: none;
-    box-shadow: var(--main-box-shadow);
+    color: white;
+    font-weight: bold;
     transition: var(--main-transition);
 }
 
 .footer .container {
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .footer .copyright {

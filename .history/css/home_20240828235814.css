@@ -564,8 +564,7 @@ img {
 }
 
 .about-us .container .box img:hover {
-    transform: rotate(360deg) scale(1);
-    transition-duration: 3s;
+    transform: rotate(2deg) scale(1);
 }
 
 .about-us .container h3 {
@@ -696,39 +695,28 @@ img {
 }
 
 .footer .footer-links {
-    max-width: 100%;
+    /* max-width: 100%;
     max-height: 100%;
     padding-top: 10px;
     display: flex;
     margin: 60px 0 20px;
     gap: 40px;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    justify-content: center; */
 }
 
 .footer .footer-links a {
     display: block;
-    font-size: 17px;
-    letter-spacing: 4px;
     color: white;
-    border-bottom: 3px solid rgba(58, 79, 148, 0.918);
-    border-radius: 6px;
-    padding: 10px;
+    font-weight: bold;
 }
 
 .footer .footer-links a:hover {
-    color: var(--main-color-alt);
-    font-weight: bolder;
-    border: none;
-    box-shadow: var(--main-box-shadow);
+    font-size: 18px;
     transition: var(--main-transition);
 }
 
 .footer .container {
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .footer .copyright {
