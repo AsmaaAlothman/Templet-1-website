@@ -147,10 +147,9 @@ img {
 .header {
     background-color: white;
     position: relative;
-    box-shadow: 0 0 10px #ddd;
-    /* قمنا بتوحيد الشادو لجميع المتصفحات */
-    z-index: 1000;
-    /* لضمان بقاء الهيدر فوق المحتويات الأخرى */
+    -webkit-box-shadow: 0 0 10px#ddd;
+    -moz-box-shadow: 0 0 10px#ddd;
+    box-shadow: 0 0 10px#ddd;
 }
 
 .header .container {
@@ -160,14 +159,13 @@ img {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    padding: 10px 15px;
-    /* إضافة padding للكونتينر */
 }
 
 .header .logo {
     color: var(--main-color);
     font-size: 40px;
     font-weight: bold;
+    /*  height: 72px; للحفاظ على ارتفاع الهيدر حتى لو اختلف حجم المين  */
     height: 72px;
     display: flex;
     justify-content: center;
@@ -175,34 +173,24 @@ img {
 }
 
 
-/* Responsive styles for the logo */
+/* start responsive media for logo selector : */
 
 @media (max-width: 767px) {
     .header .logo {
         width: 100%;
         height: 50px;
-        font-size: 30px;
-        /* تقليل حجم الخط للاستجابة */
     }
 }
 
 
-/* Navigation styles */
+/*end responsive media for logo selector : */
 
 .header .main_nav {
     display: flex;
-    list-style: none;
-    /* إزالة النقاط من القائمة */
-    margin: 0;
-    /* إزالة الهوامش الافتراضية */
-    padding: 0;
-    /* إزالة الحشوة الافتراضية */
 }
 
-.header .main_nav>li {
-    position: relative;
-    /* لتحسين وضع القوائم المنسدلة */
-}
+
+/* start responsive media for main_nav selector : */
 
 .header .main_nav>li>a {
     height: 80px;
@@ -213,77 +201,13 @@ img {
     align-items: center;
     position: relative;
     color: black;
-    padding: 0 25px;
+    padding: 0px 25px;
     transition: var(--main-transition);
     overflow: hidden;
 }
 
-.header .main_nav>li>a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: var(--main-color);
-    top: 0;
-    left: -100%;
-    transition: var(--main-transition);
-}
 
-.header .main_nav>li>a:hover {
-    color: var(--main-color);
-    background-color: #fafafa;
-}
-
-.header .main_nav>li>a.partner_with_us:hover {
-    color: white;
-    background-color: var(--main-color);
-    font-size: 21px;
-    font-weight: bold;
-}
-
-.header .main_nav>li>a:hover::before {
-    left: 0;
-}
-
-
-/* Dropdown menu styles */
-
-.header .container .main_nav>li>ul {
-    display: none;
-    /* إخفاء القائمة المنسدلة بشكل افتراضي */
-    position: absolute;
-    top: 100%;
-    /* تموضع القائمة المنسدلة أسفل العنصر الأب */
-    left: 0;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    margin: 0;
-    padding: 10px 0;
-    min-width: 200px;
-    z-index: 1000;
-}
-
-.header .container .main_nav>ul>li>a {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: black;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-.header .main_nav>li>ul>li>a:hover {
-    background-color: var(--main-color);
-    color: white;
-}
-
-.header .main_nav>li:hover>ul {
-    display: block;
-    /* عرض القائمة المنسدلة عند التحويم */
-}
-
-
-/* Responsive styles for the navigation */
+/* start responsive media for li > a selector : */
 
 @media (max-width: 767px) {
     .header .main_nav>li>a {
@@ -291,29 +215,30 @@ img {
         height: 40px;
         font-size: 14px;
     }
+}
+
+@media (max-width: 767px) {
     .header .main_nav {
         flex-direction: column;
         gap: 0;
         padding: 5px;
         margin: auto;
     }
-    .header .container {
-        display: flex;
-        margin-right: 0;
-        padding: 5px;
-        justify-content: end;
-    }
-    .header .main_nav>li>ul {
-        position: static;
-        /* تغيير الوضع لجعل القائمة المنسدلة متوافقة مع الأجهزة المحمولة */
-        box-shadow: none;
-        /* إزالة الظل في الوضع المتجاوب */
-    }
-    .header .main_nav>li>ul>li>a {
-        font-size: 14px;
-        padding: 10px;
-    }
 }
+
+.check-btn {
+    font-size: 30px;
+    color: rgb(223, 46, 46);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .check-btn
+{}
 
 
 /* End header */

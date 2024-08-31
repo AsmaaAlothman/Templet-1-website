@@ -248,7 +248,7 @@ img {
 
 /* Dropdown menu styles */
 
-.header .container .main_nav>li>ul {
+.header .main_nav>li>ul {
     display: none;
     /* إخفاء القائمة المنسدلة بشكل افتراضي */
     position: absolute;
@@ -264,7 +264,7 @@ img {
     z-index: 1000;
 }
 
-.header .container .main_nav>ul>li>a {
+.header .main_nav>li>ul>li>a {
     padding: 10px 20px;
     font-size: 16px;
     color: black;
