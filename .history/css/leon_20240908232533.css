@@ -88,16 +88,9 @@
         }
         /* جزئية ديزاين فواصل الاقسام  */
         
-        .spikes {
-            position: relative;
-        }
+        .spikes {}
         
-        .spikes::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            right: 0;
-        }
+        .spikes::before {}
         /* End global rules  */
         
         .parent {

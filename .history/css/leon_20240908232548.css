@@ -92,11 +92,8 @@
             position: relative;
         }
         
-        .spikes::after {
+        .spikes::before {
             content: "";
-            position: absolute;
-            width: 100%;
-            right: 0;
         }
         /* End global rules  */
         

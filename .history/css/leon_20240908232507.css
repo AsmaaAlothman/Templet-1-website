@@ -86,18 +86,9 @@
             border: 2px solid white;
             transition-delay: 0.2s;
         }
-        /* جزئية ديزاين فواصل الاقسام  */
+        /* جزئية  ديزاين فواصل الاقسام */
         
-        .spikes {
-            position: relative;
-        }
-        
-        .spikes::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            right: 0;
-        }
+        .spikes {}
         /* End global rules  */
         
         .parent {

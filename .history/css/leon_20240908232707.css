@@ -95,8 +95,7 @@
         .spikes::after {
             content: "";
             position: absolute;
-            width: 100%;
-            right: 0;
+            width: 100%
         }
         /* End global rules  */
         
