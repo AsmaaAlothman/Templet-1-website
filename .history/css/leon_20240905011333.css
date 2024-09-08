@@ -1654,7 +1654,7 @@
         .footer .container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 43px;
+            gap: 40px;
         }
         
         .footer .box h3 {
@@ -1772,12 +1772,17 @@
             display: block;
         }
         
-        .footer .box.footer-gallary img {
+        .footer .footer-gallary {
+            /* display: flex; */
+        }
+        
+        .footer .footer-gallary img {
             border: 3px solid var(--main-color);
-            width: 85px;
-            height: 80px;
+            width: 100px;
+            height: 90px;
             margin: 2px;
             display: inline-flex;
+            ;
         }
         
         .footer .copyright {
