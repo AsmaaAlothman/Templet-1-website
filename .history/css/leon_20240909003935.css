@@ -97,12 +97,10 @@
             position: absolute;
             width: 100%;
             right: 0;
-            /* الطول هون لو زودت عليه رح ياكل من شكل المثلث اللي عملناه  */
             height: 30px;
             z-index: 1;
-            background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
-            /* اذا بدي كبر الشكل بلعب هون بالسايز */
-            background-size: 50px 50px;
+            background-color: red;
+            background-image: linear-gradient(130deg, ed);
         }
         /* End global rules  */
         
